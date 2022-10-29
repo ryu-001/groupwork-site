@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACMPCS - Space</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar: modified from Bootstrap documentation
+         Online: https://getbootstrap.com/docs/5.2/components/navbar/#nav
+         Bootsrap Authors: https://getbootstrap.com/docs/5.2/about/team/
+         License: CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/
+         Retrieved: 2022-10-26 -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">ACMPCS</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/404">Page 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/404">Page 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/404">Page 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="assets/randompage.js"></script>
+    <!-- End Navbar -->
+
+    <br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card my-2">
+                    <div class="card-header">
+                        <h1>Spaceflight and Computing</h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Computing has a long history in spaceflight, from the first artificial satellite to orbit
+                            the Earth, to the very latest in spaceflight technology, being used both in
+                            space and on the ground.
+                        </p>
+                    </div>
+                </div>
+                <div class="card my-2">
+                    <div class="card-header">
+                        <h4><i>Sputnik I</i></h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            The Soviet Union launched <i>Sputnik I</i> in 1957, kicking off a new era in spaceflight.
+                            <br />
+                            While the equipment on board was very simple, only capable of sending a simple repetitive
+                            pulse, the satellite contained a temperature regulation system and pressure sensors. If the
+                            spacecraft's internal pressure or temperature passed certain thresholds, the duration of the
+                            pulses would change to indicate the seals or the thermal control system had failed. The way
+                            the recieved pulses travelled was also used to make deductions about the
+                            Earth's ionosphere. Computers were also used in the planning for the <i>Sputnik I</i>
+                            mission, calculating the parareters of its orbit.
+                        </p>
+                    </div>
+                    <img src="assets/sputnik1.jpg" />
+                    <div class="card-footer">
+                        <p class="card-text text-muted">
+                            Photo Credit: NASA, online, <a
+                                href="https://history.nasa.gov/sputnik/gallerysput.html">Photo Gallery-Sputnik</a>,
+                            retrieved 2022-10-29.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="card my-2">
+                    <div class="card-header">
+                        <h4>Apollo Guidance Computer</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            The Apollo Guidance Computer (AGC) was a computer designed in the early 1960s to be
+                            installed on
+                            the Apollo Command Module and Lunar Module spacecraft, used in the first &mdash; and so far
+                            only &mdash; human landings on the Moon.
+                            <br />
+                            This computer was remarkable in many aspects - it was the first computer to be built with
+                            silicon integrated circuits.
+                            <br />
+                            The AGC had a 16-bit word size, with 1 bit being a parity bit to detect when memory
+                            corruption occurs and show a warning light.
+                            <br />
+                            It used a 2048KHz clock, executing an instruction every 2 cycles of this clock, at roughly
+                            1MHz. It had 1000 words (equivalent to ~2KB) of memory in each of its memory banks. Bank 0
+                            was modifiable RAM, and all subsequent banks were ROM (Read Only Memory). The version used
+                            in manned flights had 36 banks of fixed memory, giving the AGC 36 kilowords, approximately
+                            72 kilobytes of fixed memory for storing programs and constant data.
+
+                        </p>
+                    </div>
+                    <img src="assets/apollo1.jpg" />
+                    <div class="card-footer">
+                        <p class="card-text text-muted">
+                            Pictured: the DSKY (Display & Keyboard) for the AGC in the Apollo 13 Spacecraft
+                            <i>Odyssey</i>.
+                            <br />
+                            Photo Credit: NASA, online, <a
+                                href="https://www.hq.nasa.gov/pao/History/afj/compessay.html">The Apollo Flight Journal
+                                - The Apollo On-board Computers</a>,
+                            retrieved 2022-10-29.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sputnik, Apollo Computer, GPS, Telescopes -->
+
+    <footer class="py-2 border-top">
+        <div class="container">
+            <span class="text-muted">2022 Nicky, Sonny, Maia, Cat</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
