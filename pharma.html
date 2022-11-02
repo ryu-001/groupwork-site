@@ -7,6 +7,15 @@
     <title>ACMPCS - Pharmaceuticals</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<style>
+		.text-larger {
+			font-size: 1.2rem;
+		}
+
+		.text-largest {
+			font-size: 4rem;
+		}
+	</style>
 </head>
 
 <body>
@@ -53,41 +62,100 @@
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h1 class="bd-title">Computing in Pharmaceuticals</h1>
+		    <h1 class="bd-title text-largest text-center"><b>Computing in Pharmaceuticals</b></h1>
                 <figure class="figure">
                     <img class="figure-img img-fluid rounded" src="assets/pills1.jpeg" alt="Assorted medicines.">
                     <figcaption class="figure-caption">Assorted pills and other medical instruments</figcaption>
                 </figure>
 
-                <h2 class="bd-title">Is it?</h2>
-                <p class="bd-lead">It is a fact that computation is an <b>incredible</b> asset to the pharmaceutical
-                    industry. It helps the industry generate <b>billions</b> upon billions of dollars using advanced
-                    algorithms, analysis, and testing.</p>
-                <p class="lead">Find out what the greatest have to say about it:</p>
+
+
+
+
+		<div class="card m-3 p-3 w-30">
+			<h3 class="card-title">Contents</h3>
+			<ul>
+				<li><a href="#heading_industry" class="text-larger">Standard Preamble</a></li>
+				<li><a href="#heading_simulation" class="text-larger">Simulating Patients</a></li>
+				<li><a href="#heading_solving" class="text-larger">Solving Problems</a></li>
+				<li><a href="#heading_sales" class="text-larger">Selling Products</a></li>
+			</ul>
+		</div>
+
+		<hr>
+
+		<h2 class="bd-title" id="heading_industry">The Industry</h2>
+		<p class="bd-lead text-larger">Computation is an <b>incredible</b> asset to the pharmaceutical industry. The progress of pharmaceuticals has accelerated drastically with the introduction of computers, allowing scientists to focus their efforts on innovation on developing new medinices, while the slow, repetitive, and necessary work happens in the background.<br>A less medically-focused example is budgeting software. It allows labs to optimise their cash flow (which they often have a lot of), helping them invest more into research instead of spending time sorting their finances out. Another example of computers being incredibly useful is the supply chain, allowing rapid requests and deliveries of critical equipment and reagents. <br>But these aren't even directly related to medicine - read on to find the top 3 computation benefits in pharma!</p>
+	
+		<hr>
+		<h2 class="bd-title" id="heading_simulation">Simulation</h2>
 
                 <div class="p-10 rounded-3 text-bg-dark d-flex mb-5">
                     <div class="container-fluid col-sm-7 p-2">
-                        <h2><i>"We use computers to do statistics to see if our medicine is healthy!"</i>
-                            <br>
-                            <small class="text-muted">-Dr. Science</small>
-                        </h2>
+			    <blockquote class="blockquote">
+			    	<h2><i>"Biological systems are so inherently complex that <u>only</u> efficient models running on state of the art hardware can begin to simulate reality."</i></h2>
+
+				<br>
+				<footer class="blockquote-footer">
+				<a class="text-muted" href="https://link.springer.com/chapter/10.1007/978-1-4612-4248-2_18">-J. A. Schmidt et al, 2010</a>
+			    	</footer>
+                     
+			    </blockquote>
                     </div>
                     <div class="container-fluid col-sm-5 p-2">
-                        <img class="img-fluid rounded" src="assets/scientist1.jpeg">
+			<!-- https://unsplash.com/photos/Z7a3qgz_cj4 -->
+                        <img class="img-fluid rounded" src="assets/simulation1.jpeg" alt="Medical professionals analyzing data on a portable computer intensely.">
                     </div>
                 </div>
-                <div class="p-10 rounded-3 text-bg-dark d-flex">
+
+		
+		<p class="bd-lead text-larger">In the old days, we tested everything that was believed to be a medicine. As you might expect, most of these things <i>weren't</i> medicines. We progressed onto testing on living creatures similar biologically to humans, like monkeys. We know how people responded to that. Although we still trial with animals and rodents, a new contender has emerged: the computer.<br>Advanced simulations and models enable rapid testing of potential drugs, and their influence, on smaller closed systems. This is not yet anywhere near the accuracy of testing on live subjects, but it can often indicate the approximate results and timescales.</p>
+
+
+
+
+		<hr>
+		<h2 class="bd-title" id="heading_solving">Solving</h2>
+
+                <div class="p-10 rounded-3 text-bg-dark d-flex mb-5">
                     <div class="container-fluid col-sm-7 p-2">
-                        <h2><i>"My iPad counts my money so my business can pay expenses."</i>
-                            <br>
-                            <small class="text-muted">-Medicinal Manager</small>
-                        </h2>
+			<blockquote class="blockquote">
+				<h2><i>"...has been an important open research problem for more than 50 years."</i></h2>
+                        	<br>
+                            	<footer class="blockquote-footer">
+					<a class="text-muted" href="https://www.nature.com/articles/s41586-021-03819-2">-John Jumper et al, 2021</a>
+				</footer>
+                    	</blockquote>
                     </div>
 
                     <div class="container-fluid col-sm-5 p-2">
-                        <img class="img-fluid rounded" src="assets/businessman1.jpeg">
+			<!-- https://unsplash.com/photos/4THYwIYKUKM -->
+                        <img class="img-fluid rounded" src="assets/solving1.jpg" alt="A scientist investingating a computer while wearing a face mask.">
                     </div>
                 </div>
+		<p class="bd-lead text-larger">Not unlike the applications of computers in solving mathematical or technological problems, they can also be used to solve biological problems. A prime example of this is Google Deepmind's AlphaFold project in 2021. It applied cutting-edge artificial intelligence technology to solve problems, at a rate of orders of magnitude faster than it's predecessors. The problem in question was protein folding - predicting protein structures based on a protein sequence. This has tremendous applications in bio-science, and unlocks the door for medical companies to investigate this branch of science much more readily.<br>A similar project that you have likely heard of was Fold@Home, a distributed computation solution to achieve the same thing, also using computers.</p>
+
+		<hr>
+		<h2 class="bd-title" id="heading_sales">Sales</h2>
+
+		<div class="p-10 rounded-3 text-bg-dark d-flex mb-5">
+			<div class="container-fluid col-sm-7 p-2">
+				<blockquote class="blockquote">
+					<h2><i>"...the recent focus on AI and ML is changing the picture rapidly."</i></h2>
+					<br>
+					<footer class="blockquote-footer">
+						<a class="text-muted" href="https://link.springer.com/article/10.1007/s10614-022-10333-8"> Rama K. Malladi</a>
+					</footer>
+				</blockquote>
+			</div>
+
+			<div class="container-fluid col-sm-5 p-2">
+				<!-- https://unsplash.com/photos/5fNmWej4tAA -->
+				<img class="img-fluid rounded" src="assets/sales1.jpg" alt="Two economists using laptops and a notepad.">
+			</div>
+		</div>
+		
+		<p class="bd-lead text-larger">The field of finance and economy is dominated by mathematics, the kind of field that computation is designed to process. It leads to, no surprise, mathematical models of the market. Big Pharmaceutical can apply such models to maximise their sales and offerings in ways that would otherwise be difficult and wildly inconsistent. These models, often applying Machine Learning to predict scenarios, will map out the spread, distribution, and demand of various types of drugs and treatments. This allows corporate to maximise profits more easily, which in turn creates more budget for the scientists who develop medicine. More budget means more science, and it's all possible thanks to computation!</p>
             </div>
         </div>
     </div>
@@ -118,5 +186,4 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
