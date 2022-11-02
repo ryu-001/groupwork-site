@@ -26,22 +26,23 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-			<div class="row">
-			    <div class="col-sm">
-                    <a class="nav-link text-center" aria-current="page" href="index.html">Home</a>
-			    </div>
-			    <div class="col-sm">
-                    <a class="nav-link text-center" href="pharma.html">Pharmaceuticals</a>
-                </div>
-			    <div class="col-sm">
-                    <a class="nav-link text-center active" href="wild-me.html">Wild Me</a>
-			    </div>
-			    <div class="col-sm">
-                    <a class="nav-link text-center" href="space.html">Space</a>
-			    </div>
-			</div>
-		    </li>
+                        <div class="row">
+                            <div class="col-sm">
+                                <a class="nav-link text-center" aria-current="page" href="index.html">Home</a>
+                            </div>
+                            <div class="col-sm">
+                                <a class="nav-link text-center" href="pharma.html">Pharmaceuticals</a>
+                            </div>
+                            <div class="col-sm">
+                                <a class="nav-link text-center active" href="wild-me.html">Wild Me</a>
+                            </div>
+                            <div class="col-sm">
+                                <a class="nav-link text-center" href="space.html">Space</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
+            </div>
         </div>
     </nav>
     <script src="assets/randompage.js"></script>
@@ -49,47 +50,62 @@
 
     <br />
 
-    
+
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h1>Wild Me</h1>                
-                <p><a href="https://www.wildme.org/" title="Wild Me website" target="_blank">Wild Me</a> is an NGO dedicated to improving the collection and management of wildlife data.
-                    For many researchers, their projects are delayed, potentially even for years, due to lack of technological expertise or budget. 
-                    Projects that require analysis of a large volume of data, such as images taken by camera traps, may need to be sorted and identified by individuals.
-                    This creates a long delay before the results can be compiled, and limits the scope and repeatability of such projects.
+                <h1>Wild Me</h1>
+                <p><a href="https://www.wildme.org/" title="Wild Me website" target="_blank">Wild Me</a> is an NGO
+                    dedicated to improving the collection and management of wildlife data.
+                    For many researchers, their projects are delayed, potentially even for years, due to lack of
+                    technological expertise or budget.
+                    Projects that require analysis of a large volume of data, such as images taken by camera traps, may
+                    need to be sorted and identified by individuals.
+                    This creates a long delay before the results can be compiled, and limits the scope and repeatability
+                    of such projects.
                     Wild Me provides open source software that aims to speed up this process using machine learning.
-                </p>                
+                </p>
                 <div class="p-10 rounded-3 text-bg-dark d-flex mb-5">
                     <div class="container-fluid col-sm-7 p-2">
-                        <h2><i>"Wild Me builds open software and artificial intelligence for the conservation research community. We are machine learning experts and software professionals supporting you in the fight against extinction."</i>
-                            
+                        <h2><i>"Wild Me builds open software and artificial intelligence for the conservation research
+                                community. We are machine learning experts and software professionals supporting you in
+                                the fight against extinction."</i>
+
                         </h2>
                     </div>
                     <div class="container-fluid col-sm-5 p-2">
                         <img class="img-fluid rounded" src="assets/img_wildme_logo.png" alt="The Wild Me logo">
                     </div>
                 </div>
-                <h2>Wildbook and Codex</h2>                
-                <p>                 
-                    This tool, developed by Wild Me, allows researchers to track individual animals, collect samples and analyse them, involve citizen scientists to collect sighting information, and more.
-                    Researchers upload their photos and associated metadata, and the software categorises them. It creates <b>Encounters</b> for each animal identified and a <b>Sighting</b> for each group of multiple animals.
+                <h2>Wildbook and Codex</h2>
+                <p>
+                    This tool, developed by Wild Me, allows researchers to track individual animals, collect samples and
+                    analyse them, involve citizen scientists to collect sighting information, and more.
+                    Researchers upload their photos and associated metadata, and the software categorises them. It
+                    creates <b>Encounters</b> for each animal identified and a <b>Sighting</b> for each group of
+                    multiple animals.
                     These can include data about the relationships between the animals.
-                    <b>Individuals</b> have one or more encounters and a profile page containing relevant information that has been confirmed by researchers.
+                    <b>Individuals</b> have one or more encounters and a profile page containing relevant information
+                    that has been confirmed by researchers.
                     <br>
-                    <div class="container-fluid col-sm-5 p-2">
-                        <img class="img-fluid rounded" src="assets/img_whale.jpeg" alt="The tail of a whale breaking the surface of the ocean">
-                    </div>
-                    <br>The detection of species and individuals makes use of pretrained machine learning models, including:
-                    <ul>
-                        <li><b>Pose Invariant Embeddings</b>, which identifies individual animals. It is trained on species by species basis, and significantly, it can register new individuals without needing to be retrained.</li>
-                        <li><b>Hotspotter</b> analyses textures in an image to identify unique patterning, and compares this to images stored in the database.</li>
-                        <li><b>CurvRank v2</b> and <b>finFindR</b> match an edge, for example, a whale's dorsal fin. </li>
-                    </ul>
-                    The software allows for joint human and machine learning review of data.
+                <div class="container-fluid col-sm-5 p-2">
+                    <img class="img-fluid rounded" src="assets/img_whale.jpeg"
+                        alt="The tail of a whale breaking the surface of the ocean">
+                </div>
+                <br>The detection of species and individuals makes use of pretrained machine learning models, including:
+                <ul>
+                    <li><b>Pose Invariant Embeddings</b>, which identifies individual animals. It is trained on species
+                        by species basis, and significantly, it can register new individuals without needing to be
+                        retrained.</li>
+                    <li><b>Hotspotter</b> analyses textures in an image to identify unique patterning, and compares this
+                        to images stored in the database.</li>
+                    <li><b>CurvRank v2</b> and <b>finFindR</b> match an edge, for example, a whale's dorsal fin. </li>
+                </ul>
+                The software allows for joint human and machine learning review of data.
                 </p>
                 <h2>Services</h2>
-                <p>Wild Me also offer services to researchers, including assistance with data upload, configuration and support with Wildbooks and help with annotation of photographic data.</p>
+                <p>Wild Me also offer services to researchers, including assistance with data upload, configuration and
+                    support with Wildbooks and help with annotation of photographic data.</p>
             </div>
         </div>
     </div>
