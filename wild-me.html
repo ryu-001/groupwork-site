@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACMPCS - Wild Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar: modified from Bootstrap documentation
+         Online: https://getbootstrap.com/docs/5.2/components/navbar/#nav
+         Bootsrap Authors: https://getbootstrap.com/docs/5.2/about/team/
+         License: CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/
+         Retrieved: 2022-10-26 -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">ACMPCS</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/404">Page 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/404">Page 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/404">Page 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="assets/randompage.js"></script>
+    <!-- End Navbar -->
+
+    <br />
+
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1>Wild Me</h1>                
+                <p><a href="https://www.wildme.org/" title="Wild Me website" target="_blank">Wild Me</a> is an NGO dedicated to improving the collection and management of wildlife data.
+                    For many researchers, their projects are delayed, potentially even for years, due to lack of technological expertise or budget. 
+                    Projects that require analysis of a large volume of data, such as images taken by camera traps, may need to be sorted and identified by individuals.
+                    This creates a long delay before the results can be compiled, and limits the scope and repeatability of such projects.
+                    Wild Me provides open source software that aims to speed up this process using machine learning.
+                </p>                
+                <div class="p-10 rounded-3 text-bg-dark d-flex mb-5">
+                    <div class="container-fluid col-sm-7 p-2">
+                        <h2><i>"Wild Me builds open software and artificial intelligence for the conservation research community. We are machine learning experts and software professionals supporting you in the fight against extinction."</i>
+                            
+                        </h2>
+                    </div>
+                    <div class="container-fluid col-sm-5 p-2">
+                        <img class="img-fluid rounded" src="assets/img_wildme_logo.png" alt="The Wild Me logo">
+                    </div>
+                </div>
+                <h2>Wildbook and Codex</h2>                
+                <p>                 
+                    This tool, developed by Wild Me, allows researchers to track individual animals, collect samples and analyse them, involve citizen scientists to collect sighting information, and more.
+                    Researchers upload their photos and associated metadata, and the software categorises them. It creates <b>Encounters</b> for each animal identified and a <b>Sighting</b> for each group of multiple animals.
+                    These can include data about the relationships between the animals.
+                    <b>Individuals</b> have one or more encounters and a profile page containing relevant information that has been confirmed by researchers.
+                    <br>
+                    <div class="container-fluid col-sm-5 p-2">
+                        <img class="img-fluid rounded" src="assets/img_whale.jpeg" alt="The tail of a whale breaking the surface of the ocean">
+                    </div>
+                    <br>The detection of species and individuals makes use of pretrained machine learning models, including:
+                    <ul>
+                        <li><b>Pose Invariant Embeddings</b>, which identifies individual animals. It is trained on species by species basis, and significantly, it can register new individuals without needing to be retrained.</li>
+                        <li><b>Hotspotter</b> analyses textures in an image to identify unique patterning, and compares this to images stored in the database.</li>
+                        <li><b>CurvRank v2</b> and <b>finFindR</b> match an edge, for example, a whale's dorsal fin. </li>
+                    </ul>
+                    The software allows for joint human and machine learning review of data.
+                </p>
+                <h2>Services</h2>
+                <p>Wild Me also offer services to researchers, including assistance with data upload, configuration and support with Wildbooks and help with annotation of photographic data.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Author Card -->
+    <div class="container py-4">
+        <div class="card" style="width:18rem">
+            <div class="card-header">
+                Page Author
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Maia Cumming</h5>
+                <p class="card-text">Maia Cumming is a 1st year CS student at Durham, in St Chad's College.</p>
+                <a href="mailto:xdjb22@durham.ac.uk" class="btn btn-secondary">Email</a>
+                <a href="https://github.com/mcvh48" class="btn btn-secondary">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-2 border-top">
+        <div class="container">
+            <span class="text-muted">2022 Nicky, Sonny, Maia, Cat</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
